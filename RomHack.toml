@@ -1,0 +1,18 @@
+[info]
+game-name = "TWW 3D Rendering"
+full-game-name = "TWW 3D Rendering"
+developer = "CryZe"
+
+[src]
+iso = "C:\\Games\\Emulator\\Wii\\iso\\Wind Waker (JPN).iso"
+link = ["target/powerpc-unknown-linux-gnu/release/libtww_3d_hack.a"]
+patch = "src/patch.asm"
+map = "maps/framework.map"
+
+[build]
+map = "C:\\Users\\Christopher Serr\\Documents\\Dolphin Emulator\\Maps\\GZLJ01.map"
+iso = "target/3d_hack.iso"
+
+[link]
+entries = ["game_loop", "draw"]
+base = "0x8040_1000"
